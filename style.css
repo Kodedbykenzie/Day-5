@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #674baf;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    background: #674baf url("images/bg-mobile.svg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body>nav>.logo {
+    display: block;
+    width: 45%;
+}
+
+body>.container {
+    text-align: center;
+}
+
+body>.container>.img-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+}
+
+body>.container>.img-container>img {
+    width: 100%;
+    display: block;
+}
+
+body>.container>section {
+    color: white;
+}
+
+body>.container>section>h1 {
+    font-weight: 600;
+}
+
+body>.container>section>p {
+    line-height: 2;
+}
+
+body>.container>section>.socials {
+    margin: 0;
+    margin-top: 3rem;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+body>.container>section>.socials>li>i {
+    cursor: pointer;
+}
+
+body>.container>section>.socials>li>i:hover {
+    color: #e882e8;
+}
+
+body>.container>section>button {
+    font-weight: 400;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    font-family: inherit;
+    display: block;
+    width: 60%;
+    margin: auto;
+    padding: 0.7rem 1.5rem;
+    border-radius: 50px;
+    border: none;
+    color: #674baf;
+    -webkit-transition: background-color 250ms linear, color 250ms linear;
+    transition: background-color 250ms linear, color 250ms linear;
+    cursor: pointer;
+}
+
+body>.container>section>button:hover {
+    color: white;
+    background-color: #e882e8;
+}
+
+body .attribution {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    display: inline-block;
+}
+
+body .attribution a {
+    color: #e882e8;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        position: relative;
+        background: #674baf url("images/bg-desktop.svg");
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        gap: 4rem;
+    }
+    body>* {
+        width: 90%;
+        margin: 0;
+    }
+    body>nav>.logo {
+        max-width: 20%;
+    }
+    body>.container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        text-align: left;
+    }
+    body>.container>.img-container {
+        width: 55%;
+    }
+    body>.container>.img-container>img {
+        width: 100%;
+    }
+    body>.container>section {
+        width: 45%;
+        color: white;
+        text-align: start;
+        padding: 1rem 2rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    body>.container>section>h1 {
+        font-size: 2rem;
+    }
+    body>.container>section>.socials {
+        margin-top: auto;
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+    }
+    body>.container>section>.socials>li>i {
+        cursor: pointer;
+    }
+    body>.container>section>.socials>li>i:hover {
+        color: #e882e8;
+    }
+    body>.container>section>button {
+        margin: 0;
+        width: 40%;
+    }
+    body footer {
+        display: none;
+    }
+}
